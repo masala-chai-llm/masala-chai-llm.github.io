@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>Academic Project Page</title>
+  <title>Masala-CHAI: A Large-Scale SPICE Netlist Dataset for Analog Circuits by Harnessing AI</title>
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -73,7 +73,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                        <a href="https://arxiv.org/pdf/2411.14299.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon">
                           <i class="fas fa-file-pdf"></i>
@@ -82,20 +82,9 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
-                      <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
-                      </span>
-                      <span>Supplementary</span>
-                    </a>
-                  </span>
-
                   <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://github.com/jitendra-bhandari/Masala-CHAI" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
@@ -104,14 +93,6 @@
                   </a>
                 </span>
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
-                  </span>
-                  <span>arXiv</span>
                 </a>
               </span>
             </div>
@@ -124,18 +105,17 @@
 
 
 <!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <video poster="" id="tree" autoplay controls muted loop height="100%">
-        <!-- Your video here -->
-        <source src="static/videos/banner_video.mp4"
-        type="video/mp4">
-      </video>
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
+<section class="hero">
+  <div class="container has-text-centered">
+    <figure class="image is-inline-block">
+      <img src="static/images/flow_1.pdf" alt="Descriptive Alt Text">
+      <figcaption class="has-text-centered is-italic mt-2">
+        Your concise and informative caption goes here.
+      </figcaption>
+    </figure>
+    <h2 class="subtitle has-text-centered mt-4">
+      Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.
+    </h2>
   </div>
 </section>
 <!-- End teaser video -->
@@ -148,7 +128,7 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+           Masala-CHAI is a fully automated framework leveraging large language models (LLMs) to generate Simulation Programs with Integrated Circuit Emphasis (SPICE) netlists. It addresses a long-standing challenge in automating netlist generation for analog circuits within circuit design automation. Automating this workflow could accelerate the creation of finetuned LLMs for analog circuit design and verification. We identify key challenges in this automation and evaluate multi-modal capabilities of state-of-the-art LLMs, particularly GPT-4, to address them. We propose a three-step workflow to overcome limitations: labeling analog circuits, prompt tuning, and netlist verification. This approach creates an end-to-end SPICE netlist generator from circuit schematic images, tackling the long-standing hurdle of accurate netlist generation. Our framework demonstrates performance improvements, tested on approximately 7500 schematics of varying complexity across 10 books. As a part of the study, we have finetuned different LLM models with the generated dataset and reported their capability to generate SPICE netlists. We open-source this solution for community-driven development.
           </p>
         </div>
       </div>
